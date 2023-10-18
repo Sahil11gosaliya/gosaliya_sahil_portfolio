@@ -1,2 +1,7 @@
-@use '../abstracts/variables' as v;
+
+@use '../mixins/fonts' as fonts; // Import the mixin
+
+@include fonts.fontFace('Century Gothic', 'fonts/GOTHICB0.ttf', bold, normal);
+@include fonts.fontFace('Century Gothic', 'fonts/GOTHIC.ttf', normal, normal);
+@include fonts.fontFace('Montserrat', '../montserrat-regular.ttf', normal, normal);
 

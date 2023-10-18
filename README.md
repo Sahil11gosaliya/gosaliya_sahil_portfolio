@@ -7,10 +7,11 @@ This is a portfolio site project
 This is a professional portfolio Site.
 It includes skills, projects and other details about myself as a front-end-dev.
 It is built in html,css (a new additionality called Sass.css is also implemented) and JS as of now.
+It is a harry potter theme based portfolio where you will see many magical thing happening.
 
 
 # version / history
-1.0 - layout with grid system and on-go images
+1.0 - layout with grid system 
 
 
 # how to use

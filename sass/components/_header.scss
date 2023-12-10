@@ -7,12 +7,6 @@ body {
 }
 
 
-
-html {
-    cursor: url('path-to-image.png'), auto;	
-  }
-
-
 .header {
     background-color: rgba(42, 27, 60, 0.3);
     padding: 5px;
@@ -33,9 +27,11 @@ html {
     color: rgb(48, 134, 255); /* Text color on hover */
 }
 
-
-
-.nav-link.active {
-    color: rgb(183, 25, 112);
-  
+@media (max-width: 768px) {
+    .wand {
+        transform: rotate(90deg); /* Rotate the element by 90 degrees */
+        width: auto; /* Allow the width to adjust automatically */
+        height: 50vh; /* Set a specific height or use a percentage value */
+        /* Add any additional styles specific to mobile size */
+    }
 }

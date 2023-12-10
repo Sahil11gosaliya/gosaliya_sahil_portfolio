@@ -16,18 +16,20 @@
         <div class="desktop l-col-span-2 xl-col-span-2 box"> <a href="index.html" class="nav-link">HOME</a></div>
         <div class="desktop l-col-span-2 xl-col-span-2 box"> <a href="about.html" class="nav-link">ABOUT</a> </div>
         <div class="desktop l-col-span-4 xl-col-span-4 box"> <a href="404.html" class="nav-link"><img
-                    src="images/namelogo.png" alt="logo" height="80px" width="150px"></a> </div>
+                    src="images/namelogo.png" alt="logo" height="80" width="150"></a> </div>
         <div class="desktop l-col-span-2 xl-col-span-2 box"><a href="illustration.html" class="nav-link">WORK</a></div>
         <div class="desktop l-col-span-2 xl-col-span-2 box"><a href="contact.html" class="nav-link">CONTACT</a></div>
     </header>
+
     <header class="grid-con">
         <h2 class="hidden">Mobile Nav</h2>
-        <div class="mobile col-span-1 box"> HOME ICON </div>
-        <div class="mobile col-span-2 box"> LOGO</div>
-        <div class="mobile col-span-1 box menu-open"> Image Icon for Hamburger</div>
+        <div class="mobile col-span-1 box"> <img src="images/home.png" alt="home" height="100" width="100"></div>
+        <div class="mobile col-span-2 box"> <img src="images/namelogo.png" alt="logo" height="80" width="150"></div>
+        <div class="mobile col-span-1 box menu-open"> <img src="images/ham.png" alt="open" height="100" width="100">
+        </div>
 
         <div class="mobile col-span-1 box ham">
-            <div class="menu-close"> Image Icon for Ham menu close</div>
+            <div class="menu-close"> <img src="images/close.png" alt="close" height="100" width="100"> </div>
             <nav>
                 <ul class="hammenu">
                     <li> <a href="index.html">Home</a> </li>
@@ -43,73 +45,136 @@
     </header>
 
     <main>
-        <section class="grid-con title">
+        <section class="grid-con title front">
             <h2 class="hidden">Section</h2>
             <div class="col-span-4 l-col-span-6 xl-col-span-6 box text">WORK EXPERIENCE</div>
             <div class="col-span-4 l-col-span-6 xl-col-span-6 box wand"> <img src="images/wand1.png" alt="wand"> </div>
         </section>
 
 
+        <section id="bgimg" style="background-image: url('../images/hero (1).png');">
+            <h2 class="hidden">BG</h2>
+            <section class="grid-con">
+                <h2 class="hidden">Gallery</h2>
+                <div class="col-span-4 l-col-span-12 xl-col-span-12 box">
+                    <h3>Motion Graphics</h3>
+                </div>
 
-        <section class="grid-con">
-            <h2 class="hidden">Gallery</h2>
-            <div class="col-span-4 l-col-span-12 xl-col-span-12 box">
-                <h3>Motion Graphics</h3>
-            </div>
+            </section>
 
-        </section>
 
-        <section class="grid-con" id="masonry-con">
+            <section class="grid-con" id="masonry-con">
+                <h2 class="hidden">Gallery</h2>
+                <!-- Box 1 -->
+                <div id="box1" class="col-span-4 l-col-start-3 l-col-end-6 xl-col-start-3 xl-col-end-6 box">
+                    <a href="#lightbox1" class="nav-link">
+                        <img src="images/mg.jpg" alt="lightbox">
+                    </a>
+                </div>
 
-            <div id="box1" class="col-span-4 l-col-start-3 l-col-end-6 xl-col-start-3 xl-col-end-6 box">
-            </div>
-            <div id="box2" class="col-span-4 l-col-start-6 l-col-end-11 xl-col-start-6 xl-col-end-11 box">
-            </div>
-            <div id="box3" class="col-span-4 l-col-start-6 l-col-end-8 xl-col-start-6 xl-col-end-8 box">
-            </div>
-            <div id="box4" class="col-span-4 l-col-start-8 l-col-end-11 xl-col-start-8 xl-col-end-11 box">
-            </div>
-            <div id="box5" class="col-span-4 l-col-start-3 l-col-end-5 xl-col-start-3 xl-col-end-5 box">
-            </div>
-            <div id="box6" class="col-span-4 l-col-start-5 l-col-end-8 xl-col-start-5 xl-col-end-8 box">
-            </div>
-            <div id="box7" class="col-span-4 l-col-start-3 l-col-end-8 xl-col-start-3 xl-col-end-8 box">
-            </div>
-        </section>
+                <!-- Box 2 -->
+                <div id="box2" class="col-span-4 l-col-start-6 l-col-end-11 xl-col-start-6 xl-col-end-11 box">
+                    <a href="#lightbox2" class="nav-link">
+                        <img src="images/mg.jpg" alt="lightbox">
+                    </a>
+                </div>
 
-        <section class="grid-con">
-            <h2 class="hidden">Project sections</h2>
-            <div class="col-span-4 l-col-span-3 xl-col-span-3 box ibox"> <a href="illustration.html">
-                    <h3>ILLUSTRATIONS</h3>
-                </a>
-            </div>
-            <div class="col-span-4 l-col-span-3 xl-col-span-3 box wbox"> <a href="websites.html">
-                    <h3>WEBSITES</h3>
-                </a> </div>
-            <div class="col-span-4 l-col-span-3 xl-col-span-3 box mbox"> <a href="motion_graphics.html">
-                    <h3>MOTION GRAPHICS</h3>
-                </a>
-            </div>
-            <div class="col-span-4 l-col-span-3 xl-col-span-3 box cbox"> <a href="content_writing.html">
-                    <h3>CONTENT WRITING</h3>
-                </a>
-            </div>
-        </section>
+                <!-- Box 3 -->
+                <div id="box3" class="col-span-4 l-col-start-6 l-col-end-8 xl-col-start-6 xl-col-end-8 box">
+                    <a href="#lightbox3" class="nav-link">
+                        <img src="images/mg.jpg" alt="lightbox">
+                    </a>
+                </div>
 
-        <section class="grid-con">
-            <h2 class="hidden">Icon</h2>
-            <div class="col-span-4 l-col-start-6 l-col-end-8 xl-col-start-6 xl-col-end-8 box"> <img
-                    src="images/logo.png" alt="symbol" height="100px" width="100px"></div>
+                <!-- Box 4 -->
+                <div id="box4" class="col-span-4 l-col-start-8 l-col-end-11 xl-col-start-8 xl-col-end-11 box">
+                    <a href="#lightbox4" class="nav-link">
+                        <img src="images/mg.jpg" alt="lightbox">
+                    </a>
+                </div>
+
+                <!-- Box 5 -->
+                <div id="box5" class="col-span-4 l-col-start-3 l-col-end-5 xl-col-start-3 xl-col-end-5 box">
+                    <a href="#lightbox5" class="nav-link">
+                        <img src="images/mg.jpg" alt="lightbox">
+                    </a>
+                </div>
+
+                <!-- Box 6 -->
+                <div id="box6" class="col-span-4 l-col-start-5 l-col-end-8 xl-col-start-5 xl-col-end-8 box">
+                    <a href="#lightbox6" class="nav-link">
+                        <img src="images/mg.jpg" alt="lightbox">
+                    </a>
+                </div>
+
+                <!-- Box 7 -->
+                <div id="box7" class="col-span-4 l-col-start-3 l-col-end-8 xl-col-start-3 xl-col-end-8 box">
+                    <a href="#lightbox7" class="nav-link">
+                        <img src="images/mg.jpg" alt="lightbox">
+                    </a>
+                </div>
+            </section>
+
+            <section class="grid-con lightbox" id="lightbox1">
+                <h2 class="hidden">Gallery</h2>
+                <a href="#close" class="lightbox_close">x</a>
+                <article class="l-col-span-12 xl-col-span-12 box">
+                    <h3 class="lb_heading l-col-span-12 xl-col-span-12">Human Portrait</h3>
+                    <div class="grid-con">
+                        <div class="col-span-4 l-col-span-6 xl-col-span-6 box">
+                            <!-- <img src=" " alt=""> -->
+                        </div>
+                        <div class="col-span-4 l-col-span-6 xl-col-span-6 box">
+                            <!-- Content for the right side of the grid -->
+                            <p>Your content for the right side goes here.</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+
+            <section class="grid-con">
+                <h2 class="hidden">Project sections</h2>
+                <div class="col-span-4 l-col-span-3 xl-col-span-3 box ibox"> <a href="illustration.html">
+                        <h3>ILLUSTRATIONS</h3>
+                    </a>
+                </div>
+                <div class="col-span-4 l-col-span-3 xl-col-span-3 box wbox"> <a href="websites.html">
+                        <h3>WEBSITES</h3>
+                    </a> </div>
+                <div class="col-span-4 l-col-span-3 xl-col-span-3 box mbox"> <a href="motion_graphics.html">
+                        <h3>MOTION GRAPHICS</h3>
+                    </a>
+                </div>
+                <div class="col-span-4 l-col-span-3 xl-col-span-3 box cbox"> <a href="content_writing.html">
+                        <h3>CONTENT WRITING</h3>
+                    </a>
+                </div>
+            </section>
+
+
         </section>
     </main>
 
-    <footer class="grid-con">
+
+
+    <footer class="full-width-grid-con" style="background-image: url('../images/footer.png');">
         <h2 class="hidden"> Footer </h2>
-        <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> footer image</div>
-        <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> copyright @ sg23</div>
+        <img class="col-span-4 l-col-span-12 xl-col-span-12" src="images/logo.png" alt="symbol" height="150"
+            width="150">
+
+        <div class="col-span-4 l-col-span-12 xl-col-span-12 rampbox">
+            <p>2023 copyrights @ sahilkumar</p>
+        </div>
     </footer>
 
+
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
+
+
 </body>
 
 </html>

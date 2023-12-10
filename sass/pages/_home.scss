@@ -53,8 +53,8 @@ video::-webkit-media-controls {
 
 
 
+/* Styles for larger screens */
 .welcome-text {
-
     padding: 20px;
     border-radius: 40px;
     margin: 50px;
@@ -63,4 +63,17 @@ video::-webkit-media-controls {
 .welcome-text p {
     padding-left: 100px;
     padding-right: 100px;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    .welcome-text {
+        padding: 10px; /* Reduced padding */
+        margin: 25px; /* Optional: Adjust margin if needed */
+    }
+
+    .welcome-text p {
+        padding-left: 20px; /* Reduced left padding */
+        padding-right: 20px; /* Reduced right padding */
+    }
 }

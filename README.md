@@ -10,8 +10,13 @@ It is built in html,css (a new additionality called Sass.css is also implemented
 It is a harry potter theme based portfolio where you will see many magical thing happening.
 
 
+# future 
+Additional magical mouse pointer with more user friendly responsive site which will have case studies and dynamic content.
+
 # version / history
 1.0 - layout with grid system 
+2.0 - Content Loaded with CSS and JS
+3.0 - Coming soong with Backend
 
 
 # how to use

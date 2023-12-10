@@ -1,12 +1,11 @@
-/* Add the following styles to your existing CSS */
+
 
 video {
-    width: 100%; /* Ensure the video takes up the full width of its container */
+    width: 100%; 
 }
 
-/* Style the video controls */
 video::-webkit-media-controls {
-    display: none !important; /* Hide default controls on Safari */
+    display: none !important; 
 }
 
 .video-container {
@@ -35,23 +34,22 @@ video::-webkit-media-controls {
 }
 
 .custom-controls button:hover {
-    color: #3498db; /* Change color on hover */
+    color: #3498db; 
 }
 
 
 
 
 
-/* Add the following styles to your existing CSS */
+
 
 .rampbox {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(123, 87, 125, 0.8));
     color: white;
-    padding: 10px; /* Add padding as needed for better visibility */
+    padding: 10px;
     text-align: center;
 }
 
-/* Your existing styles */
 
 
 

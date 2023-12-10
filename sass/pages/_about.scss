@@ -61,11 +61,11 @@ main {
     height: auto;
 }
 
-/* Media query for smaller screens (adjust the max-width as needed) */
+
 @media (max-width: 768px) {
     .intro-text {
-        padding: 10px; /* Adjust the padding for smaller screens */
-        margin: 20px; /* Adjust the margin for smaller screens */
+        padding: 10px; 
+        margin: 20px; 
     }
 
     .intro-text p {

@@ -1,31 +1,31 @@
-/* Form Fields */
+
 .field {
     margin: 20px;
 
-    /* Adjust the blur value as needed */
+
 }
 
 .field input {
-    font-family: 'CenturyGothic', sans-serif; /* Replace 'CenturyGothic' with the desired font family for form fields */
+    font-family: 'CenturyGothic', sans-serif; 
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
     backdrop-filter: blur(8px);
-    width: calc(100% - 20px); /* Use calc to consider padding and border */
+    width: calc(100% - 20px); 
     padding: 20px;
     color: white;
     box-sizing: border-box;
-    border: none; /* Remove border for a cleaner look */
+    border: none; 
     border-radius: 30px 30px 0 30px;
     font-size: 26px;
-    margin-right: auto; /* Set margin-right to auto for left alignment */
-    background-color: rgba(255, 255, 255, 0.4); /* Blue transparent background */
+    margin-right: auto; 
+    background-color: rgba(255, 255, 255, 0.4); 
 
 }
 
-/* For all input fields */
+
 ::placeholder {
     color: white;
 }
@@ -36,8 +36,8 @@ textarea {
 }
 
 button {
-/* Button background color */
-    color: #ffffff; /* Button text color */
+
+    color: #ffffff; 
     border: none;
     padding: 20px;
     cursor: pointer;
@@ -48,11 +48,11 @@ button {
 }
 
 button:hover {
-    background-color: #2aaaff; /* Button background color on hover */
+    background-color: #2aaaff; 
 }
 
 .star-icon {
-    color: #f39c12; /* Star icon color */
+    color: #f39c12; 
 }
 
 
@@ -62,5 +62,4 @@ button:hover {
 
 
 #message {
-    padding: 80px; /* Adjust the padding value as needed */
-}
+    padding: 80px; }

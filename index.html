@@ -7,32 +7,29 @@
     <title>Portfolio - Home</title>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css">
+
+
 </head>
 
 <body>
     <h1 class="hidden">Portfolio Grid</h1>
 
-    <header class="grid-con">
+    <header class="grid-con header">
         <h2 class="hidden"> Desktop Header </h2>
-        <div class="desktop l-col-span-5 xl-col-span-5 box">
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT</a>
-        </div>
-
-        <div class="desktop l-col-span-2 xl-col-span-2 box">
-            <a href="404.html">Logo and 404 link</a>
-        </div>
-
-        <div class="desktop l-col-span-5 xl-col-span-5 box">
-            <a href="work.html">Work</a>
-            <a href="contact.html">Contact</a>
-        </div>
+        <div class="desktop l-col-span-2 xl-col-span-2 box"> <a href="index.html" class="nav-link">HOME</a></div>
+        <div class="desktop l-col-span-2 xl-col-span-2 box"> <a href="about.html" class="nav-link">ABOUT</a> </div>
+        <div class="desktop l-col-span-4 xl-col-span-4 box"> <a href="404.html" class="nav-link"><img
+                    src="images/namelogo.png" alt="logo" height="80px" width="150px"></a> </div>
+        <div class="desktop l-col-span-2 xl-col-span-2 box"><a href="illustration.html" class="nav-link">WORK</a></div>
+        <div class="desktop l-col-span-2 xl-col-span-2 box"><a href="contact.html" class="nav-link">CONTACT</a></div>
     </header>
 
     <header class="grid-con">
         <h2 class="hidden">Mobile Nav</h2>
         <div class="mobile col-span-1 box"> HOME ICON </div>
-        <div class="mobile col-span-2 box"> LOGO</div>
+        <div class="mobile col-span-2 box"> <img src="images/namelogo.png" alt="logo" height="80px" width="150px"></div>
         <div class="mobile col-span-1 box menu-open"> Image Icon for Hamburger</div>
 
         <div class="mobile col-span-1 box ham">
@@ -41,7 +38,7 @@
                 <ul class="hammenu">
                     <li> <a href="index.html">Home</a> </li>
                     <li> <a href="about.html">About</a> </li>
-                    <li> <a href="work.html">Work</a> </li>
+                    <li> <a href="illustration.html">Work</a> </li>
                     <li> <a href="contact.html">Contact</a> </li>
                     <li> <a href="404.html">404</a> </li>
                 </ul>
@@ -52,74 +49,79 @@
     </header>
 
 
-
-
-
-
-
-
     <main>
         <section class="grid-con">
             <h2 class="hidden">Intro </h2>
+
             <div class="col-span-4 l-col-span-12 xl-col-span-12 box">
-                <img src="images/hero (1).jpg" alt="hero image" height="1080px" width="1200px">
-                <div class="col-span-4 l-col-span-12 xl-col-span-12 box">
-                    <h3>Hey folks, This is Sahilkumar Gosaliya</h3>
-                    <p>Welcome to my world of freelance digital artistry and illustration.
-                        If you're captivated by my craft, I encourage you to wander
-                        through my portfolio and uncover the magic of my creations.
-                        Should our visions align, let's embark on a collaborative journey.</p>
-                </div>
-                <div class="mobile col-span-4 box"> Split Line</div>
-                <div class="col-span-4 l-col-span-12 xl-col-span-12 box">
-                    <img src="images/logo.png" alt="symbol" height="100px" width="100px">
-                </div>
+                <h3>Hey folks, This is Sahilkumar Gosaliya</h3>
+                <p>Welcome to my world of freelance digital artistry and illustration.
+                    If you're captivated by my craft, I encourage you to wander
+                    through my portfolio and uncover the magic of my creations.
+                    Should our visions align, let's embark on a collaborative journey.</p>
             </div>
+            <div class="mobile col-span-4 box"> <img src="images/mobile_line.png" alt="line"></div>
+            <div class="col-span-4 l-col-span-12 xl-col-span-12 box">
+                <img src="images/logo.png" alt="symbol" height="100px" width="100px">
+            </div>
+
         </section>
 
         <section class="grid-con">
             <h2 class="hidden">Project section </h2>
-            <div class="col-span-4 l-col-span-3 xl-col-span-3 box"> <img src="images/illustration.png" alt="section1"
-                    height="400px" width="300px">
+
+            <div class="col-span-4 l-col-span-3 xl-col-span-3 box">
+                <a href="illustration.html">
+                    <img src="images/illustration.png" alt="section1" height="400px" width="300px">
+                </a>
             </div>
-            <div class="col-span-4 l-col-span-3 xl-col-span-3 box"> <img src="images/website.png" alt="section2"
-                    height="400px" width="300px">
+
+            <div class="col-span-4 l-col-span-3 xl-col-span-3 box">
+                <a href="websites.html">
+                    <img src="images/website.png" alt="section2" height="400px" width="300px">
+                </a>
             </div>
-            <div class="col-span-4 l-col-span-3 xl-col-span-3 box"><img src="images/motion.png" alt="section3"
-                    height="400px" width="300px">
+
+            <div class="col-span-4 l-col-span-3 xl-col-span-3 box">
+                <a href="motion_graphics.html">
+                    <img src="images/motion.png" alt="section3" height="400px" width="300px">
+                </a>
             </div>
-            <div class="col-span-4 l-col-span-3 xl-col-span-3 box"> <img src="images/writing.png" alt="section4"
-                    height="400px" width="300px">
+
+            <div class="col-span-4 l-col-span-3 xl-col-span-3 box">
+                <a href="content_writing.html">
+                    <img src="images/writing.png" alt="section4" height="400px" width="300px">
+                </a>
             </div>
-            <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> Split Line img</div>
+
+            <div class="desktop l-col-span-12 xl-col-span-12 box">
+                <img src="images/desktop_line.png">
+            </div>
+
+            <div class="mobile col-span-4 box">
+                <img src="images/mobile_line.png">
+            </div>
         </section>
+
 
 
         <section class="grid-con">
             <h2 class="hidden">video </h2>
-            <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> Showreel gradient map</div>
+            <div class="col-span-4 l-col-span-12 xl-col-span-12 box rampbox">
+                <h3>SHOWREEL</h3>
+            </div>
             <div class="col-span-4 l-col-span-12 xl-col-span-12 box">
-                <video controls width="1200px">
-                    <source src=" video/demo_reel.mp4" type="video/mp4">
-                </video>
-                <div> Split Line img</div>
-            </div>
+                <div class="video-container">
+                    <video controls playsinline poster="images/Hogwarts-Legacy-wallpapers-for-iPhone.jpg"
+                        id="plyr-video">
+                        <source src="video/demo_reel.mp4" type="video/mp4">
+                    </video>
+                </div>
 
-        </section>
-
-
-        <section class="grid-con">
-            <img src="images/footer.png" alt="footer">
-            <h2 class="hidden">Contact Info </h2>
-            <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> Showreel gradient map</div>
-            <div class="col-span-4 l-col-span-6 xl-col-span-6 box">
-                <div>Here is my resume! </div>
-                <img src="images/" alt="">
             </div>
-            <div class="col-span-4 l-col-span-6 xl-col-span-6 box">
-                <div>Explore my social / Connect with me</div>
-                <img src="images/" alt="">
-            </div>
+            <div class="desktop l-col-span-12 xl-col-span-12 box"> <img src="images/desktop_line.png"> </div>
+            <div class="mobile col-span-4  box"> <img src="images/mobile_line.png"> </div>
+
 
         </section>
     </main>
@@ -127,11 +129,24 @@
 
     <footer class="grid-con">
         <h2 class="hidden"> Footer </h2>
-        <img src="images/footer.png" alt="footer">
-        <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> footer image</div>
-        <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> copyright @ sg23 gradient map</div>
+        <div class="col-span-4 l-col-span-12 xl-col-span-12 box rampbox">
+            <h3> FIND ME</h3>
+        </div>
+        <div class="col-span-4 l-col-span-6 xl-col-span-6 box">
+            <div>Here is my resume! </div>
+            <img src="images/resume" alt="">
+        </div>
+        <div class="col-span-4 l-col-span-6 xl-col-span-6 box">
+            <div>Explore my social / Connect with me</div>
+            <img src="images/icon.png" alt="">
+        </div>
+
+        <div class="col-span-4 l-col-span-12 xl-col-span-12 box rampbox">
+            <h3>copyrights @ SG </h3>
+        </div>
     </footer>
 
+    <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
     <script src="js/main.js"></script>
 </body>
 

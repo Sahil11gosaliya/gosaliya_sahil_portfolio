@@ -1,1 +1,9 @@
-@use 'mixins' as m;
+@font-face {
+    font-family: CenturyGothic;
+    src: url(../fonts/CenturyGothic.woff) format("woff");
+}
+
+
+body {
+    font-family: CenturyGothic;
+}

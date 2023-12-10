@@ -15,23 +15,22 @@ body {
 
 .header a {
     font-size: 30px;
-    display: inline-block; /* Ensures block-level for padding */
-    color: white; /* Initial text color */
-    text-decoration: none; /* Remove underline by default */
-    transition: color 0.3s; /* Smooth transition for color changes */
+    display: inline-block; 
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s; 
     text-align: center;
     width: 100%;
 }
 
 .header a:hover {
-    color: rgb(48, 134, 255); /* Text color on hover */
+    color: rgb(48, 134, 255); 
 }
 
 @media (max-width: 768px) {
     .wand {
-        transform: rotate(90deg); /* Rotate the element by 90 degrees */
-        width: auto; /* Allow the width to adjust automatically */
-        height: 50vh; /* Set a specific height or use a percentage value */
-        /* Add any additional styles specific to mobile size */
+        transform: rotate(90deg); 
+        width: auto; 
+        height: 50vh; 
     }
 }

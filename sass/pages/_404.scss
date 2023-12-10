@@ -1,14 +1,14 @@
 .eimg {
-    backdrop-filter: blur(8px); /* Adjust the blur value as needed */
+    backdrop-filter: blur(8px); 
 }
 
 
 @media (max-width: 768px) {
     .eimg {
-        /* Adjust styles for mobile devices */
-        background: none; /* Remove background blur or set to a different value */
-        width: 100%; /* Set the width to 100% for full width on mobile */
-        height: auto; /* Automatically adjust height to maintain aspect ratio */
-        /* Add any additional styles specific to mobile size */
+       
+        background: none; 
+        width: 100%; 
+        height: auto; 
+      
     }
 }

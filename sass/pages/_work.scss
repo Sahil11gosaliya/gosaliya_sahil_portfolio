@@ -1,0 +1,55 @@
+.title {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0.5) as needed */
+    padding: 50px;
+}
+
+.title .text {
+    color: white;
+    font-size: 50px;
+}
+
+.wand img {
+    object-fit: contain; /* Adjust to 'cover', 'fill', 'scale-down', etc. based on your preference */
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    height: 100%; /* Ensures the image takes up the full height of its container */
+}
+
+
+
+/* Additional styles for the link boxes (optional) */
+section.grid-con .ibox a,
+section.grid-con .wbox a,
+section.grid-con .mbox a,
+section.grid-con .cbox a {
+    display: block;
+    padding: 100px; 
+ 
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.ibox {
+    background-color: #C88D29;
+ 
+}
+
+.wbox {
+    background-color: #176F78;
+ 
+  
+}
+
+.mbox {
+    background-color: #8F2BA6;
+
+
+}
+
+.cbox {
+    background-color: #D64747;
+ 
+   
+}

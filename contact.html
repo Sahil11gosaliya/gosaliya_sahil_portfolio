@@ -10,30 +10,23 @@
 </head>
 
 <body>
-        <h1 class="hidden">Contact</h1>
-        
-        <header class="grid-con">
-            <h2 class="hidden"> Desktop Header </h2>
-            <div class="desktop l-col-span-5 xl-col-span-5 box"> 
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-            </div> 
+    <h1 class="hidden">Contact</h1>
 
-            <div class="desktop l-col-span-2 xl-col-span-2 box"> 
-                <a href="404.html">Logo and 404 link</a>
-            </div> 
+    <header class="grid-con header">
+        <h2 class="hidden"> Desktop Header </h2>
+        <div class="desktop l-col-span-2 xl-col-span-2 box"> <a href="index.html" class="nav-link">HOME</a></div>
+        <div class="desktop l-col-span-2 xl-col-span-2 box"> <a href="about.html" class="nav-link">ABOUT</a> </div>
+        <div class="desktop l-col-span-4 xl-col-span-4 box"> <a href="404.html" class="nav-link"><img
+                    src="images/namelogo.png" alt="logo" height="80px" width="150px"></a> </div>
+        <div class="desktop l-col-span-2 xl-col-span-2 box"><a href="illustration.html" class="nav-link">WORK</a></div>
+        <div class="desktop l-col-span-2 xl-col-span-2 box"><a href="contact.html" class="nav-link">CONTACT</a></div>
+    </header>
 
-            <div class="desktop l-col-span-5 xl-col-span-5 box"> 
-                <a href="work.html">Work</a>
-                <a href="contact.html">Contact</a>
-             </div>
-        </header>
-
-        <header class="grid-con">
-            <h2 class="hidden">Mobile Nav</h2>
-            <div class="mobile col-span-1 box"> HOME ICON </div> 
-            <div class="mobile col-span-2 box"> LOGO</div> 
-            <div class="mobile col-span-1 box menu-open"> Image Icon for Hamburger</div> 
+    <header class="grid-con">
+        <h2 class="hidden">Mobile Nav</h2>
+        <div class="mobile col-span-1 box"> HOME ICON </div>
+        <div class="mobile col-span-2 box"> LOGO</div>
+        <div class="mobile col-span-1 box menu-open"> Image Icon for Hamburger</div>
 
         <div class="mobile col-span-1 box ham">
             <div class="menu-close"> Image Icon for Ham menu close</div>
@@ -41,59 +34,75 @@
                 <ul class="hammenu">
                     <li> <a href="index.html">Home</a> </li>
                     <li> <a href="about.html">About</a> </li>
-                    <li> <a href="work.html">Work</a> </li>
+                    <li> <a href="illustration.html">Work</a> </li>
                     <li> <a href="contact.html">Contact</a> </li>
-                    <li> <a href="404.html" >404</a> </li>
-                  </ul>
+                    <li> <a href="404.html">404</a> </li>
+                </ul>
             </nav>
-             
-          </div>
 
-        </header>
-    
-                <main>
-                <section class="grid-con">
-                    <h2 class="hidden">Section</h2>
-                    <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> Hero Image </div>
-                    <div class="col-span-4 l-col-span-6 xl-col-span-6 box"> Contact Me</div>
-                    <div class="col-span-4 l-col-span-6 xl-col-span-6 box"> Magic Wand Pointer </div>
-                </section>
+        </div>
 
-                <section class="grid-con">
-                    <h2 class="hidden">Main section </h2>
-                    <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> Main Image</div>
-                    <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> Geetings Text!</div>
-                </section>
+    </header>
+
+    <main>
+        <section class="grid-con title">
+            <h2 class="hidden">Section</h2>
+            <div class="col-span-4 l-col-span-6 xl-col-span-6 box text">CONTACT ME</div>
+            <div class="col-span-4 l-col-span-6 xl-col-span-6 box wand"> <img src="images/wand4.png" alt="wand"> </div>
+        </section>
+
+        <section class="grid-con">
+            <h2 class="hidden">Main section </h2>
+            <div class="col-span-4 l-col-span-12 xl-col-span-12 box">
+                <h3> Congratulations my friend! You have made it to the
+                    end.</h3>
+                <h3> Please fill out your details so that I can contact you later. </h3>
+            </div>
+        </section>
+        <section class="grid-con">
+            <h2 class="hidden">Form Fields</h2>
+            <div class="field col-span-4 l-col-span-6 xl-col-span-6">
+                <input type="text" id="name" name="name" placeholder="Your Sweet Name" required>
+            </div>
+            <div class="field col-span-4 l-col-span-6 xl-col-span-6">
+                <input type="email" id="email" name="email" placeholder="Your Email ID" required>
+            </div>
+            <div class="field col-span-4 l-col-span-6 xl-col-span-6">
+                <input type="text" id="workplace" name="workplace" placeholder="Your Website / Work" required>
+            </div>
+            <div class="field col-span-4 l-col-span-6 xl-col-span-6">
+                <input type="tel" id="telephone" name="telephone" placeholder="Your Telephone" required>
+            </div>
+            <div class="field col-span-4 l-col-span-12 xl-col-span-12">
+                <textarea id="message" name="message"
+                    placeholder="Any Message that can give me a better understanding for your request" rows="5"
+                    required></textarea>
+            </div>
+            <div class="field col-span-4 l-col-start-5 l-col-end-9 xl-col-start-5 xl-col-end-9 box">
+                <button type="submit">GIVE IT AWAY <span class="star-icon">★</span></button>
+            </div>
+        </section>
 
 
-                <section class="grid-con">
-                    <h2 class="hidden">Form Fields </h2>
-                    <div class="col-span-4 l-col-span-6 xl-col-span-6 box"> Name </div>
-                    <div class="col-span-4 l-col-span-6 xl-col-span-6 box"> Email </div>
-                    <div class="col-span-4 l-col-span-6 xl-col-span-6 box"> Workplace</div>
-                    <div class="col-span-4 l-col-span-6 xl-col-span-6 box"> Telephone</div>
-                    <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> Message Box</div>
-                   <div class="col-span-4 l-col-start-5 l-col-end-9 xl-col-start-5 xl-col-end-9 box"> <a href="#lightbox">Submit button</a> </div>
-                </section>
+        <section class="grid-con" id="lightbox">
+            <h2 class="hidden">Thank You Message</h2>
+            <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> Magic Icon </div>
+            <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> Text </div>
+            <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> Messsage </div>
+            <div class="col-span-4 l-col-start-6 l-col-end-8 xl-col-start-6 xl-col-end-8 box"> <a href=""
+                    class="lightbox_close">x</a></div>
+        </section>
+    </main>
 
-                <section class="grid-con" id="lightbox">
-                    <h2 class="hidden">Thank You Message</h2>
-                    <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> Magic Icon </div>
-                    <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> Text </div>
-                    <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> Messsage </div>
-                    <div class="col-span-4 l-col-start-6 l-col-end-8 xl-col-start-6 xl-col-end-8 box"> <a href="" class="lightbox_close">x</a></div>
-                </section>
-                </main>
 
-   
 
-                <footer class="grid-con">
-                    <h2 class="hidden"> Footer </h2>
-                    <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> footer image</div>
-                    <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> copyright @ sg23</div>
-                </footer>
-       
-        <script src="js/main.js"></script>
-    </body>
+    <footer class="grid-con">
+        <h2 class="hidden"> Footer </h2>
+        <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> footer image</div>
+        <div class="col-span-4 l-col-span-12 xl-col-span-12 box"> copyright @ sg23</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
 
 </html>

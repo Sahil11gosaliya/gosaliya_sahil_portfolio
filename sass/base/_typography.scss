@@ -1,7 +1,4 @@
-
-@use '../mixins/fonts' as fonts; // Import the mixin
-
-@include fonts.fontFace('Century Gothic', 'fonts/GOTHICB0.ttf', bold, normal);
-@include fonts.fontFace('Century Gothic', 'fonts/GOTHIC.ttf', normal, normal);
-@include fonts.fontFace('Montserrat', '../montserrat-regular.ttf', normal, normal);
-
+h1,h2,h3,h4,h5,h6,p {
+    font-size: 25px;
+    color: white;
+}

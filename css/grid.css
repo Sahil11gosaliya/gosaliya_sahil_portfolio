@@ -27,13 +27,10 @@ html {
 }
 
 .box {
-   background-color: rgb(138, 142, 142);
+
    color: rgb(27, 27, 27);
-   border-radius: 5px;
-   padding: 20px;
    text-align: center;
-   margin-top: 10px;
-   margin-bottom:10px;
+ 
  }
 
 /* 2. ---Mobile Library Grid Styles--- */

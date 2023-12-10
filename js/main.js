@@ -6,14 +6,12 @@
   const hamIconOpen = document.querySelector('.menu-open');
   const hamIconClose = document.querySelector('.menu-close');
 
-  hamMenu.style.display = 'none';
-
   hamIconOpen.addEventListener('click', function () {
-    hamMenu.style.display = 'block';
+    hamMenu.classList.add('show'); // Show the menu
   });
 
   hamIconClose.addEventListener('click', function () {
-    hamMenu.style.display = 'none';
+    hamMenu.classList.remove('show'); // Hide the menu
   });
 
 

@@ -23,33 +23,175 @@ section.grid-con .mbox a,
 section.grid-con .cbox a {
     display: block;
     padding: 100px; 
- 
+  
     text-align: center;
     color: white;
     text-decoration: none;
 }
 
 
-
-.ibox {
-    background-color: #C88D29;
- 
+.ibox,
+.wbox,
+.mbox,
+.cbox {
+    background: linear-gradient(#C88D29, #E4C975); /* Adjust the colors as needed */
+    margin: 0;
 }
 
 .wbox {
-    background-color: #176F78;
- 
-  
+    background: linear-gradient(#176F78, #4AA9B5); /* Adjust the colors as needed */
+    margin: 0;
 }
 
 .mbox {
-    background-color: #8F2BA6;
-
-
+    background: linear-gradient(#8F2BA6, #CF8AD6); /* Adjust the colors as needed */
+    margin: 0;
 }
 
 .cbox {
-    background-color: #D64747;
+    background: linear-gradient(#D64747, #F08484); /* Adjust the colors as needed */
+    margin: 0;
+}
+
+
+
+
+/* Add these styles to the end of your existing CSS file */
+
+/* Lightbox styles */
+/* Assuming the box class has a fixed width and height */
+#masonry-con img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 20px;
+}
+
+/* Add this to your existing CSS or create a new style block */
+
+/* Masonry Box Animation */
+#masonry-con .box img {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  backface-visibility: hidden;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+
+#masonry-con .box:hover img {
+  transform: scale(1.1);
+}
+
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    background-size: 55vh;
+    background-position: 40px bottom;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+  }
+  
+  .lightbox_close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 3em;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+  .lightbox_close:hover {
+    opacity: 0.5;
+    color: rgb(152, 58, 235);
+  }
+  
+  .lightbox article {
+    width: 55%;
+    padding: 50px;
+
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .lb_heading,
+.lb_text {
+  text-align: center;
+  color: white;
+}
+
+.lb_heading {
+  font-size: 2.5em;
+  margin-bottom: 14px;
+}
+
+.lb_text {
+  font-size: 1.5em;
+  line-height: 1.6;
+  margin-top: 2em;
+}
+
+  
+  /* Turn on the lightbox using the :target pseudo selector */
+  .lightbox:target {
+    display: flex;
+  }
+  
+
+  .ltext {
+    text-align: left;
+  }
+
+
+  .art {
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  .art img {
+    width: 100%; /* Set the width to 100% to ensure full width */
+    display: inline-block; /* Make the image inline-block to center it horizontally */
+    position: relative; /* Position relatively within the .art div */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+  }
+  
+
+  .read-more-toggle {
+    cursor: pointer;
+    color: rgb(152, 58, 235);
+  }
+
+  .read-more-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Add smooth transition */
+  }
+
+
+
+
+  .full-width-grid-con img {
+    margin: auto;
+    padding: 10px;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+  .lightbox {
+    width: 50vw;
+    height: 50vh;
+    //needs to function at mobile size
  
-   
+  }
 }

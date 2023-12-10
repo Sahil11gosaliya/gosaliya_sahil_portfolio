@@ -47,8 +47,22 @@ video::-webkit-media-controls {
 .rampbox {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(123, 87, 125, 0.8));
     color: white;
-    padding: 15px; /* Add padding as needed for better visibility */
+    padding: 10px; /* Add padding as needed for better visibility */
     text-align: center;
 }
 
+/* Your existing styles */
 
+
+
+.welcome-text {
+
+    padding: 20px;
+    border-radius: 40px;
+    margin: 50px;
+}
+
+.welcome-text p {
+    padding-left: 100px;
+    padding-right: 100px;
+}

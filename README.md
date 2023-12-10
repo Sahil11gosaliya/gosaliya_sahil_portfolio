@@ -14,9 +14,9 @@ It is a harry potter theme based portfolio where you will see many magical thing
 Additional magical mouse pointer with more user friendly responsive site which will have case studies and dynamic content.
 
 # version / history
-1.0 - layout with grid system 
-2.0 - Content Loaded with CSS and JS
-3.0 - Coming soong with Backend
+1. - layout with grid system 
+2. - Content Loaded with CSS and JS
+3. - Coming soong with Backend
 
 
 # how to use
@@ -29,6 +29,9 @@ Use your mouse or touch pad as it is responsive website.
 
 # contributing
 Sahilkumar Gosaliya - Student at Fanshawe
+
+# Credits
+The photos and images used in the website were sourced from the royalty stocks, orignal harry potter / WB site.
 
 # license
 MIT

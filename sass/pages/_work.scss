@@ -1,194 +1,87 @@
-.title {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 50px;
+.pending {
+  height: 500px;
+  margin: 50px;
 }
 
-.title .text {
-    color: white;
-    font-size: 50px;
+.toggle-list {
+  display: flex;
+  justify-content: space-evenly; /* Evenly distribute items along the main axis */
 }
 
-.wand img {
-    object-fit: contain; 
-    width: 100%; 
-    height: 100%;
+.projectimg {
+  overflow: hidden;
+  position: relative;
+  height: 400px;
 }
 
-
-
-
-section.grid-con .ibox a,
-section.grid-con .wbox a,
-section.grid-con .mbox a,
-section.grid-con .cbox a {
-    display: block;
-    padding: 100px; 
-  
-    text-align: center;
-    color: white;
-    text-decoration: none;
+.projectimg img {
+  object-fit: cover; /* Cover the container */
+  width: 100%;
+  height: 100%;
 }
 
-
-.ibox,
-.wbox,
-.mbox,
-.cbox {
-    background: linear-gradient(#C88D29, #E4C975); 
-    margin: 0;
-}
-
-.wbox {
-    background: linear-gradient(#176F78, #4AA9B5); 
-    margin: 0;
-}
-
-.mbox {
-    background: linear-gradient(#8F2BA6, #CF8AD6); 
-    margin: 0;
-}
-
-.cbox {
-    background: linear-gradient(#D64747, #F08484); 
-    margin: 0;
-}
-
-
-
-
-
-#masonry-con img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    padding: 20px;
-}
-
-
-
-
-#masonry-con .box img {
-  transform: scale(1);
-  transition: transform 0.3s ease;
-  backface-visibility: hidden;
-  transform-origin: center;
-  transform-style: preserve-3d;
-  will-change: transform;
-}
-
-
-#masonry-con .box:hover img {
+.projectimg:hover img {
   transform: scale(1.1);
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-
-.lightbox {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.85);
-    background-size: 55vh;
-    background-position: 40px bottom;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    overflow-y: auto;
-  }
-  
-  .lightbox_close {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    color: white;
-    font-size: 3em;
-    text-decoration: none;
-    font-weight: bolder;
-  }
-  
-  .lightbox_close:hover {
-    opacity: 0.5;
-    color: rgb(152, 58, 235);
-  }
-  
-  .lightbox article {
-    width: 55%;
-    padding: 50px;
-
-    border-radius: 10px;
-    text-align: left;
-  }
-  
-  .lb_heading,
-.lb_text {
-  text-align: center;
-  color: white;
+.projectimg img:not(:hover) {
+  transform: scale(1); /* Scale back to normal size */
 }
 
-.lb_heading {
-  font-size: 2.5em;
-  margin-bottom: 14px;
+.projectimg p {
+  position: absolute;
+  top: 50%; /* Place text vertically centered */
+  left: 50%; /* Place text horizontally centered */
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 0.5s ease;
 }
 
-.lb_text {
-  font-size: 1.5em;
-  line-height: 1.6;
-  margin-top: 2em;
+.projectimg:hover p {
+  opacity: 1; /* Show text on hover */
+}
+/* Case study cards */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  height: 300px;
 }
 
-  
-
-  .lightbox:target {
-    display: flex;
-  }
-  
-
-  .ltext {
-    text-align: left;
-  }
-
-
-  .art {
-    text-align: center; 
-  }
-  
-  .art img {
-    width: 100%; 
-    display: inline-block; 
-    position: relative;
-    top: 50%; 
-    transform: translateY(-50%); 
-  }
-  
-
-  .read-more-toggle {
-    cursor: pointer;
-    color: rgb(152, 58, 235);
-  }
-
-  .read-more-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-
-
-
-
-  .full-width-grid-con img {
-    margin: auto;
-    padding: 10px;
+.card-content {
+  position: relative;
 }
 
+.promo_img {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out; /* Add transition for zoom effect */
+  object-fit: cover; /* Cover the container */
+  width: 100%;
+  height: 100%;
+}
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start offscreen */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, left 0.3s ease-in-out;
+}
 
+.overlay p {
+  margin: 0;
+  font-size: 20px;
+}
 
-@media screen and (max-width: 767px) {
-  .lightbox {
-    width: 50vw;
-    height: 50vh;
-    //needs to function at mobile size with more smooth and better animation along with hamburger
- 
-  }
+.card:hover .overlay {
+  opacity: 1;
+  left: 0; /* Slide in from left */
 }

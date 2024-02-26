@@ -8,6 +8,11 @@
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css">
+    <script src="https://cdn.plyr.io/3.6.2/plyr.js" defer></script>
+    <script src="https://unpkg.com/split-type" defer></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js" defer></script>
+    <script type="module" src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -16,118 +21,386 @@
     <header class="grid-con header">
         <h2 class="hidden"> Desktop Header </h2>
         <div class="desktop l-col-span-2 xl-col-span-2 box"> <a href="index.html" class="nav-link">HOME</a></div>
-        <div class="desktop l-col-span-2 xl-col-span-2 box"> <a href="about.html" class="nav-link">ABOUT</a> </div>
-        <div class="desktop l-col-span-4 xl-col-span-4 box"> <a href="404.html" class="nav-link"><img
-                    src="images/namelogo.png" alt="logo" height="80" width="150"></a> </div>
-        <div class="desktop l-col-span-2 xl-col-span-2 box"><a href="illustration.html" class="nav-link">WORK</a></div>
-        <div class="desktop l-col-span-2 xl-col-span-2 box"><a href="contact.html" class="nav-link">CONTACT</a></div>
+        <div class="desktop l-col-span-2 xl-col-span-2 box"> <a href="#about" class="nav-link">ABOUT</a> </div>
+        <div class="desktop l-col-span-4 xl-col-span-4 logo box"><img src="images/namelogo.png" alt="logo"> </div>
+        <div class="desktop l-col-span-2 xl-col-span-2 box"><a href="#projects" class="nav-link">WORK</a></div>
+        <div class="desktop l-col-span-2 xl-col-span-2 box"><a href="#contact" class="nav-link">CONTACT</a></div>
+    </header>
+
+    <header class="grid-con header">
+        <h2 class="hidden"> Desktop Header </h2>
+        <div class="tablet m-col-span-2 box"> <a href="#home" class="nav-link">HOME</a></div>
+        <div class="tablet m-col-span-2 box"> <a href="#about" class="nav-link">ABOUT</a> </div>
+        <div class="tablet m-col-span-4 logo box"><img src="images/namelogo.png" alt="logo"> </div>
+        <div class="tablet m-col-span-2 box"><a href="#projects" class="nav-link">WORK</a></div>
+        <div class="tablet m-col-span-2 box"><a href="#contact" class="nav-link">CONTACT</a></div>
     </header>
 
     <header class="grid-con">
         <h2 class="hidden">Mobile Nav</h2>
-        <div class="mobile col-span-1 box"> <img src="images/home.png" alt="home" height="100" width="100"></div>
-        <div class="mobile col-span-2 box"> <img src="images/namelogo.png" alt="logo" height="80" width="150"></div>
-        <div class="mobile col-span-1 box menu-open"> <img src="images/ham.png" alt="open" height="100" width="100">
+        <div class="mobile col-span-2 logo box"> <img src="images/namelogo.png" alt="logo"> </div>
+
+        <div class="mobile col-start-4 col-end-5 box">
+            <div class="openbtn"><span></span><span></span><span></span></div>
         </div>
 
-        <div class="mobile col-span-1 box ham">
-            <div class="menu-close"> <img src="images/close.png" alt="close" height="100" width="100"> </div>
+        <div class="mobile col-span-4 box">
             <nav>
-                <ul class="hammenu navlist col-span-4">
-                    <li> <a href="index.html">Home</a> </li>
-                    <li> <a href="about.html">About</a> </li>
-                    <li> <a href="illustration.html">Work</a> </li>
-                    <li> <a href="contact.html">Contact</a> </li>
-                    <li> <a href="404.html">404</a> </li>
+                <ul class="hammenu">
+                    <li> <a href="#home">Home</a> </li>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#projects">Work</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main style="background-image: url('../images/heroimage.jpg');">
 
-        <section class="grid-con">
+    <main>
+        <!--bakcgrund video for showereel or demoreel-->
+        <section class="grid-con" id="home">
             <h2 class="hidden">Intro </h2>
 
-            <div class="col-span-4 l-col-span-12 xl-col-span-12 box welcome-text">
-                <h3>Hey folks, This is Sahilkumar Gosaliya</h3>
-                <p>Welcome to my world of freelance digital artistry and illustration.
-                    If you're captivated by my craft, I encourage you to wander
-                    through my portfolio and uncover the magic of my creations.
-                    Should our visions align, let's embark on a collaborative journey.</p>
+            <div class="col-span-4 m-col-span-8 l-col-span-8 xl-col-span-8 box">
+                <div class="welcome-text">
+                    <p>Hey folks, This is </p>
+                    <h3>SAHILKUMAR GOSALIYA</h3>
+                    <p>Welcome to my world of freelance digital artistry and illustration. If you're intrigued by my
+                        craft, I invite you to explore my portfolio and discover the depth of my creations. Let's embark
+                        on a collaborative journey where our visions align, paving the way for innovative and inspiring
+                        projects.</p>
+                </div>
+
+
+                <div class="links">
+                    <a href="https://github.com/Sahil11gosaliya/gosaliya_sahil_portfolio.git"><img
+                            src="images/github.svg" alt="github icon"></a>
+                    <a
+                        href="https://www.instagram.com/digital_crayons?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                            src="images/insta.svg" alt="insta icon"></a>
+                    <a href="www.linkedin.com/in/sahil-kumar-gosaliya-b015a32a8"><img src="images/linkdln.svg"
+                            alt="linkdln icon"></a>
+                    <a href="https://drive.google.com/file/d/1XZbgrSNPgNCxan4l2i4CVUr7ch_d-C6i/view?usp=drive_link"><img
+                            src="images/resume.svg" alt="resume"></a>
+                </div>
+
             </div>
-            <div class="mobile col-span-4 box"> <img src="images/mobile_line.png" alt="line"></div>
-            <div class="col-span-4 l-col-span-12 xl-col-span-12 box">
-                <img src="images/logo.png" alt="symbol" height="100" width="100">
+
+            <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">
+                <img src="images/profile_pic.png" alt="profile pic" class="profile-pic">
             </div>
+
 
         </section>
 
-        <section class="grid-con">
-            <h2 class="hidden">Project section </h2>
 
-            <div class="col-span-4 l-col-span-3 xl-col-span-3 box">
-                <a href="illustration.html">
-                    <img src="images/illustration.png" alt="section1" height="400" width="300">
-                </a>
-            </div>
-
-            <div class="col-span-4 l-col-span-3 xl-col-span-3 box">
-                <a href="websites.html">
-                    <img src="images/website.png" alt="section2" height="400" width="300">
-                </a>
-            </div>
-
-            <div class="col-span-4 l-col-span-3 xl-col-span-3 box">
-                <a href="motion_graphics.html">
-                    <img src="images/motion.png" alt="section3" height="400" width="300">
-                </a>
-            </div>
-
-            <div class="col-span-4 l-col-span-3 xl-col-span-3 box">
-                <a href="content_writing.html">
-                    <img src="images/writing.png" alt="section4" height="400" width="300">
-                </a>
-            </div>
-
-            <div class="desktop l-col-span-12 xl-col-span-12 box"> <img src="images/desktop_line.png" alt="line"></div>
-            <div class="mobile col-span-4 box"> <img src="images/mobile_line.png" alt="line"></div>
-        </section>
-
-        <section class="grid-con">
-            <h2 class="hidden">video </h2>
-            <div class="col-span-4 l-col-span-12 xl-col-span-12 box rampbox">
-                <h3>SHOWREEL</h3>
-            </div>
-            <div class="col-span-4 l-col-span-12 xl-col-span-12 box">
-                <div class="video-container">
-                    <video controls playsinline poster="images/Hogwarts-Legacy-wallpapers-for-iPhone.jpg"
-                        id="plyr-video">
+        <section id="about">
+            <section class="grid-con">
+                <h2 class="hidden">Biography/ About and Video</h2>
+                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 box">
+                    <video controls playsinline poster="images/video_bg.jpg" id="plyr-video">
                         <source src="video/demo_reel.mp4" type="video/mp4">
                     </video>
                 </div>
 
+
+
+                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 box">
+                    <div class="welcome-text">
+                        <p>If you've reached this point, you're likely curious to learn more about me. Over the past 3
+                            years, I've worked as a freelancer, proficiently utilizing Adobe Illustrator for various
+                            projects. Whether it's crafting logos or producing fan art for comics and movies, I'm
+                            dedicated to delivering high-quality designs that exceed expectations.</p>
+
+                        <p> With a Bachelor's in Computer Science, I possess a solid grasp of computing concepts and
+                            proficiency in coding across multiple programming languages. Additionally, as a certified
+                            Interactive Media Designer, I specialize in designing and developing responsive websites,
+                            creating captivating motion graphics, and indulging in the art of video editing. My
+                            expertise spans the use of Adobe Suite, Cinema 4D, and VS Code, ensuring the delivery of
+                            impactful and innovative projects </p>
+                    </div>
+                </div>
+
+
+                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 box">
+                    <div class="welcome-text">
+                        <p> I am a motivated and focused individual with a passion for creativity and achieving goals.
+                            While I may lean towards introversion, I channel my energy into productive activities.
+                            During my leisure time, I enjoy exploring cinema and art at museums, as well as immersing
+                            myself in literature through reading and writing fictional novels.</p>
+
+                        <p> If you share an appreciation for the works of esteemed authors such as George R. R. Martin,
+                            J. K. Rowling, or Stan Lee, I believe we could have common ground to build upon.</p>
+
+                    </div>
+                </div>
+
+                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 box skills">
+                    <div class="image-container">
+                        <img src="images/icons.png" alt="skills icon">
+                    </div>
+                </div>
+
+
+            </section>
+        </section>
+
+
+
+        <section class="grid-con">
+            <h2 class="hidden">Project sections</h2>
+            <div class="ibox col-span-2 m-col-span-3 l-col-span-3 xl-col-span-3 box"> <a href="#illustrations">
+                    <h3>ILLUSTRATIONS</h3>
+                </a>
             </div>
-            <div class="desktop l-col-span-12 xl-col-span-12 box"> <img src="images/desktop_line.png" alt="line"> </div>
-            <div class="mobile col-span-4 box"> <img src="images/mobile_line.png" alt="line"> </div>
+            <div class="wbox col-span-2 m-col-span-3 l-col-span-3 xl-col-span-3 box"> <a href="#websites">
+                    <h3>WEBSITES</h3>
+                </a> </div>
+            <div class="mbox col-span-2 m-col-span-3 l-col-span-3 xl-col-span-3 box"> <a href="#motion_graphics">
+                    <h3>MOTION GRAPHICS</h3>
+                </a>
+            </div>
+            <div class="cbox col-span-2 m-col-span-3 l-col-span-3 xl-col-span-3 box"> <a href="#content_writing">
+                    <h3>CONTENT WRITING</h3>
+                </a>
+            </div>
+        </section>
+
+
+        <section class="bgimg" id="illustrations">
+            <h2 class="hidden">Background Image Section</h2>
+            <section class="grid-con">
+                <h2 class="hidden">Gallery</h2>
+                <div class="col-span-4 m-col-span-3 l-col-span-3 xl-col-span-3 projectimg box">
+                    <a href="project_detail.html">
+                        <img src="images/artwork.png" alt="project1">
+                        <p>Project</p>
+                    </a>
+                </div>
+                <div class="col-span-4 m-col-span-3 l-col-span-3 xl-col-span-3 projectimg box">
+                    <a href="project_detail.html">
+                        <img src="images/artwork.png" alt="project1">
+                        <p>Project</p>
+                    </a>
+                </div>
+                <div class="col-span-4 m-col-span-3 l-col-span-3 xl-col-span-3 projectimg box">
+                    <a href="project_detail.html">
+                        <img src="images/artwork.png" alt="project1">
+                        <p>Project</p>
+                    </a>
+                </div>
+                <div class="col-span-4 m-col-span-3 l-col-span-3 xl-col-span-3 projectimg box">
+                    <a href="project_detail.html">
+                        <img src="images/artwork.png" alt="project1">
+                        <p>Project</p>
+                    </a>
+                </div>
+
+            </section>
+        </section>
+
+        <section class="bgimg" id="websites">
+            <h2 class="hidden">Background Image Section</h2>
+            <section class="grid-con">
+                <h2 class="hidden">Gallery</h2>
+                <div class="col-span-4 m-col-span-3 l-col-span-3 xl-col-span-3 projectimg box">
+                    <a href="project_detail.html">
+                        <img src="images/artwork.png" alt="project1">
+                        <p>Project</p>
+                    </a>
+                </div>
+                <div class="col-span-4 m-col-span-3 l-col-span-3 xl-col-span-3 projectimg box">
+                    <a href="project_detail.html">
+                        <img src="images/artwork.png" alt="project1">
+                        <p>Project</p>
+                    </a>
+                </div>
+                <div class="col-span-4 m-col-span-3 l-col-span-3 xl-col-span-3 projectimg box">
+                    <a href="project_detail.html">
+                        <img src="images/artwork.png" alt="project1">
+                        <p>Project</p>
+                    </a>
+                </div>
+
+            </section>
+        </section>
+
+        <section class="bgimg" id="motion_graphics">
+            <h2 class="hidden">Background Image Section</h2>
+            <section class="grid-con">
+                <h2 class="hidden">Gallery</h2>
+                <div class="col-span-4 m-col-span-3 l-col-span-3 xl-col-span-3 projectimg box">
+                    <a href="project_detail.html">
+                        <img src="images/artwork.png" alt="project1">
+                        <p>Project</p>
+                    </a>
+                </div>
+                <div class="col-span-4 m-col-span-3 l-col-span-3 xl-col-span-3 projectimg box">
+                    <a href="project_detail.html">
+                        <img src="images/artwork.png" alt="project1">
+                        <p>Project</p>
+                    </a>
+                </div>
+                <div class="col-span-4 m-col-span-3 l-col-span-3 xl-col-span-3 projectimg box">
+                    <a href="project_detail.html">
+                        <img src="images/artwork.png" alt="project1">
+                        <p>Project</p>
+                    </a>
+                </div>
+                <div class="col-span-4 m-col-span-3 l-col-span-3 xl-col-span-3 projectimg box">
+                    <a href="project_detail.html">
+                        <img src="images/artwork.png" alt="project1">
+                        <p>Project</p>
+                    </a>
+                </div>
+
+            </section>
+        </section>
+
+        <section class="bgimg" id="content_writing">
+            <h2 class="hidden">Background Image Section</h2>
+            <section class="grid-con">
+                <h2 class="hidden">Gallery</h2>
+                <div class="col-span-4 m-col-span-3 l-col-span-3 xl-col-span-3 projectimg box">
+                    <a href="project_detail.html">
+                        <img src="images/artwork.png" alt="project1">
+                        <p>Project</p>
+                    </a>
+                </div>
+                <div class="col-span-4 m-col-span-3 l-col-span-3 xl-col-span-3 projectimg box">
+                    <a href="project_detail.html">
+                        <img src="images/artwork.png" alt="project1">
+                        <p>Project</p>
+                    </a>
+                </div>
+            </section>
+        </section>
+
+        <section class="grid-con">
+            <h2 class="hidden">Case Study</h2>
+            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+                <h3> CASE STUDIES</h3>
+            </div>
+            <div class="card col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">
+                <a href="case_study.html">
+                    <div class="card-content">
+                        <img class="promo_img" src="images/MM.png" alt="promo 1">
+                        <div class="overlay desktop">
+                            <p class="desktop description">Explore and manipulate tunes on a single-page web app
+                                using
+                                HTML,
+                                CSS, and JavaScript. Features drag-and-drop functionality for playing music files,
+                                with
+                                controls for play, pause, reset, and volume adjustment, accompanied by CSS beat
+                                animations.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">
+                <a href="case_study.html">
+                    <div class="card-content">
+                        <img class="promo_img" src="images/SZ.png" alt="promo 2">
+                        <div class="overlay desktop">
+                            <p class="desktop description">Discover Sonic Zen earbuds on an interactive marketing
+                                site
+                                with
+                                HTML, CSS, and JavaScript. Experience parallax scrolling, a 3D model viewer, and
+                                X-ray
+                                sections revealing earbud details. Version 1.2 adds scroll-triggered animations for
+                                enhanced
+                                interactivity.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">
+                <a href="case_study.html">
+                    <div class="card-content">
+                        <img class="promo_img" src="images/SW.png" alt="promo 3">
+                        <div class="overlay desktop">
+                            <p class="desktop description">Collaborative web app for exploring Star Wars character
+                                data via JSON calls. Utilizes HTML, CSS, and JavaScript with GSAP animation, API
+                                calls,
+                                and
+                                responsive layout. Features minified CSS with SaaS modules and IIFE JavaScript for
+                                efficient
+                                performance across devices.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+
+        <section id="contact">
+            <section class="grid-con">
+                <h2 class="hidden">Form section </h2>
+                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+                    <h3> Congratulations my friend! You have made it to the
+                        end.</h3>
+                    <h3> Please fill out your details so that I can contact you later. </h3>
+                </div>
+            </section>
+
+            <form class="grid-con" id="form">
+                <!-- Name Field -->
+                <div
+                    class="field col-span-4 m-col-start-3 m-col-end-7 l-col-start-3 l-col-end-7 xl-col-start-3 xl-col-end-7  box">
+                    <input type="text" id="name" name="name" placeholder="Your Sweet Name" required>
+
+                </div>
+
+                <!-- Email Field -->
+                <div
+                    class="field col-span-4 m-col-start-7 m-col-end-11 l-col-start-7 l-col-end-11 xl-col-start-7 xl-col-end-11 box">
+                    <input type="email" id="email" name="email" placeholder="Your Email ID" required>
+                </div>
+
+                <!-- Workplace Field -->
+                <div
+                    class="field col-span-4  m-col-start-3 m-col-end-8 l-col-start-3 l-col-end-8 xl-col-start-3 xl-col-end-8 box">
+                    <input type="text" id="company" name="workplace" placeholder="Your Website / Work" required>
+                </div>
+
+                <!-- Telephone Field -->
+                <div
+                    class="field col-span-4 m-col-start-8 m-col-end-11 l-col-start-8 l-col-end-11 xl-col-start-8 xl-col-end-11 box">
+                    <input type="tel" id="phone" name="telephone" placeholder="Your Telephone" required>
+                </div>
+
+                <!-- Message Field -->
+                <div
+                    class="field col-span-4 m-col-start-3 m-col-end-11 l-col-start-3 l-col-end-11 xl-col-start-3 xl-col-end-11 box">
+                    <input type="text" id="msg" name="message" placeholder="Leave Me a Message" required>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+                    <input id="submit" type="submit" value="Submit Away">
+                    <div id="feedback" class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+                        <p>*Please fill out all required sections</p>
+                    </div>
+                </div>
+            </form>
 
         </section>
     </main>
 
-    <footer class="full-width-grid-con" style="background-image: url('../images/footer.png');">
+    <footer class="grid-con">
         <h2 class="hidden"> Footer </h2>
-        <div class="col-span-2 l-col-span-12 xl-col-span-12 socials"> <img src="images/scoials.png" alt="socials">
-        </div>
-        <div class="col-span-4 l-col-span-12 xl-col-span-12 rampbox">
-            <p>2023 copyrights @ sahilkumar</p>
+        <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+            <p>2024 copyrights @ sahilkumar</p>
         </div>
     </footer>
 
-    <script src="https://cdn.plyr.io/3.6.2/plyr.js" defer></script>
-    <script src="https://unpkg.com/split-type" defer></script>
-    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js" defer></script>
-    <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js" defer></script>
-    <script src="js/main.js" defer></script>
+
 
 </body>
 

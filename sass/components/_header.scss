@@ -1,62 +1,124 @@
-body {
-    margin: 0;
-    background-image: url('../images/heroimage.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+.openbtn {
+  margin-top: 30px;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  padding-right: 10px;
 }
 
+.openbtn span {
+  position: absolute;
+  background: #ffffff;
+  display: inline-block;
+  border-radius: 3px;
+  left: 14px;
+  height: 4px;
+  transition: all 0.4s;
+}
+
+.openbtn span:nth-of-type(1) {
+  top: 15px;
+  width: 45%;
+}
+
+.openbtn span:nth-of-type(2) {
+  top: 23px;
+  width: 35%;
+}
+
+.openbtn span:nth-of-type(3) {
+  top: 31px;
+  width: 20%;
+}
+
+.openbtn.active span:nth-of-type(1) {
+  width: 45%;
+  top: 18px;
+  left: 14px;
+  transform: translateY(6px) rotate(-135deg);
+}
+
+.openbtn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3) {
+  width: 45%;
+  top: 30px;
+  left: 14px;
+  transform: translateY(-6px) rotate(135deg);
+}
+
+.hammenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 101;
+  background: #3a4248;
+  width: 250px;
+  height: 100vh;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  filter: opacity(90%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.hammenu.active {
+  transform: translateX(0);
+}
+
+.hammenu ul {
+  list-style: none;
+}
+
+.hammenu li {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.hammenu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 26px;
+  transition: color 0.3s ease-in-out;
+}
+
+.hammenu a:hover {
+  color: #2aa9fd;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 80px;
+  height: 100px;
+  margin: 10px;
+}
 
 .header {
-    background-color: rgba(42, 27, 60, 0.3);
-    padding: 5px;
-    align-items: center;
+  padding: 5px;
+  align-items: center;
 }
 
 .header a {
-    font-size: 30px;
-    display: inline-block; 
-    color: white; 
-    text-decoration: none; 
-    transition: color 0.3s; 
-    text-align: center;
-    width: 100%;
+  font-size: 30px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: center;
+  width: 100%;
 }
 
 .header a:hover {
-    color: rgb(48, 134, 255); 
-}
-
-@media (max-width: 768px) {
-    .wand {
-        transform: rotate(90deg); 
-        width: auto; 
-        height: 50vh; 
-    }
-}
-
-
-
-//nav
-
-/* Initial state of the hamburger menu */
-.ham {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-/* State of the hamburger menu when it's visible */
-.ham.show {
-    display: block;
-    opacity: 1;
-}
-
-
-
-.navlist a{
-    margin: 20px;
-    color: white;
-    font-size: 18px;
-    align-items: center;
+  color: rgb(48, 134, 255);
 }

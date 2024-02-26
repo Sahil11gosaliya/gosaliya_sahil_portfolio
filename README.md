@@ -1,37 +1,33 @@
-![Portfolio site](images/crystal.jpg)
+![Portfolio site](images/profile_pic.png)
 
 # gosaliya_sahil_portfolio
-This is a portfolio site project
+
+A portfolio site project
 
 # description
-This is a professional portfolio Site.
-It includes skills, projects and other details about myself as a front-end-dev.
-It is built in html,css (a new additionality called Sass.css is also implemented) and JS as of now.
-It is a harry potter theme based portfolio where you will see many magical thing happening.
 
-
-# future 
-Additional magical mouse pointer with more user friendly responsive site which will have case studies and dynamic content.
+This professional portfolio site showcases my skills, projects, and other pertinent details as a Web Designer. Constructed using HTML and CSS, it also incorporates an advanced feature through the implementation of Sass.css, enhancing the styling capabilities and workflow. Furthermore, the site utilizes JavaScript (JS) for interactive elements, with additional sophistication achieved through JS bundling and the implementation of Greensock with JS. This combination of technologies and techniques ensures a dynamic and efficient presentation of my professional abilities and accomplishments.In addition to my web design capabilities, this project also showcases my proficiency in Illustrator and other design disciplines, offering a holistic view of my design expertise.
 
 # version / history
-1. - layout with grid system 
-2. - Content Loaded with CSS and JS
-3. - Coming soong with Backend
 
+1. - layout with grid system
+2. - Content Loaded with SaaS and IFEE
+3. - Redesign with minimilistic approach
+4. - Coming soong with Dyamic Backend Content for Projects
 
-# how to use
-1. Clone the repo / Download the files
-2. Load it in your system
-3. Run it and have fun
+# how to know if it is functional
+
+1. Go to my site to see it actually working, ("www.sahilgosaliya.com")
+2. Or Clone the repo and try to implement on your own
 
 # functionality
-Use your mouse or touch pad as it is responsive website. 
+
+Use your mouse or touch pad as it is responsive website. There is a variety in feature as it changes screensizes, so take your time and enjoy each of the aspect of site.
 
 # contributing
+
 Sahilkumar Gosaliya - Student at Fanshawe
 
-# Credits
-The photos and images used in the website were sourced from the royalty stocks, orignal harry potter / WB site.
-
 # license
+
 MIT

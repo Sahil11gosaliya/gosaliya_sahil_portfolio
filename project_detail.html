@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Portfolio - Home</title>
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css">
+    <script src="https://cdn.plyr.io/3.6.2/plyr.js" defer></script>
+    <script src="https://unpkg.com/split-type" defer></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js" defer></script>
+    <script type="module" src="js/main.js" defer></script>
+</head>
+
+<body>
+    <h1 class="hidden">Portfolio Grid</h1>
+
+    <header class="grid-con header">
+        <h2 class="hidden"> Desktop Header </h2>
+        <div class="desktop l-col-span-2 xl-col-span-2 box"> <a href="index.html" class="nav-link">HOME</a></div>
+        <div class="desktop l-col-span-2 xl-col-span-2 box"> <a href="#about" class="nav-link">ABOUT</a> </div>
+        <div class="desktop l-col-span-4 xl-col-span-4 logo box"><img src="images/namelogo.png" alt="logo"> </div>
+        <div class="desktop l-col-span-2 xl-col-span-2 box"><a href="#projects" class="nav-link">WORK</a></div>
+        <div class="desktop l-col-span-2 xl-col-span-2 box"><a href="#contact" class="nav-link">CONTACT</a></div>
+    </header>
+
+    <header class="grid-con header">
+        <h2 class="hidden"> Desktop Header </h2>
+        <div class="tablet m-col-span-2 box"> <a href="#home" class="nav-link">HOME</a></div>
+        <div class="tablet m-col-span-2 box"> <a href="#about" class="nav-link">ABOUT</a> </div>
+        <div class="tablet m-col-span-4 logo box"><img src="images/namelogo.png" alt="logo"> </div>
+        <div class="tablet m-col-span-2 box"><a href="#projects" class="nav-link">WORK</a></div>
+        <div class="tablet m-col-span-2 box"><a href="#contact" class="nav-link">CONTACT</a></div>
+    </header>
+
+    <header class="grid-con">
+        <h2 class="hidden">Mobile Nav</h2>
+        <div class="mobile col-span-2 logo box"> <img src="images/namelogo.png" alt="logo"> </div>
+
+        <div class="mobile col-start-4 col-end-5 box">
+            <div class="openbtn"><span></span><span></span><span></span></div>
+        </div>
+
+        <div class="mobile col-span-4 box">
+            <nav>
+                <ul class="hammenu">
+                    <li> <a href="#home">Home</a> </li>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#projects">Work</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="grid-con">
+        <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box pending">
+            <p>Oops, You are too Early for Evolution! Go back to Stone Age for sometime.</p>
+            <a href="https://www.youtube.com/watch?v=AnLMZa7btew">
+                <h3>Hey, Click Here!</h3>
+            </a>
+        </div>
+    </section>
+
+    <footer class="grid-con">
+        <h2 class="hidden"> Footer </h2>
+        <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+            <p>2024 copyrights @ sahilkumar</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

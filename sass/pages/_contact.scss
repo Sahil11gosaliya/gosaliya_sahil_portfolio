@@ -1,65 +1,57 @@
-
 .field {
-    margin: 20px;
-
-
+  margin: 20px;
 }
 
 .field input {
-    font-family: 'CenturyGothic', sans-serif; 
+  font-family: "CenturyGothic", sans-serif;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    backdrop-filter: blur(8px);
-    width: calc(100% - 20px); 
-    padding: 20px;
-    color: white;
-    box-sizing: border-box;
-    border: none; 
-    border-radius: 30px 30px 0 30px;
-    font-size: 26px;
-    margin-right: auto; 
-    background-color: rgba(255, 255, 255, 0.4); 
-
+  backdrop-filter: blur(8px);
+  width: calc(100% - 20px);
+  padding: 20px;
+  color: white;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 30px 30px 0 30px;
+  font-size: 26px;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.4);
 }
-
 
 ::placeholder {
-    color: white;
+  color: white;
 }
 
-
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 button {
-
-    color: #ffffff; 
-    border: none;
-    padding: 20px;
-    cursor: pointer;
-    border-radius: 35px;
-    font-size: 25px;
-    background-color: #135785; 
-    transition: background-color 0.3s ease;
+  color: #ffffff;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 23px;
+  font-size: 25px;
+  background-color: #135785;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #2aaaff; 
+  background-color: #2aaaff;
 }
 
 .star-icon {
-    color: #f39c12; 
+  color: #f39c12;
 }
-
 
 #lb a {
-    width: 100%;
+  width: 100%;
 }
 
-
 #message {
-    padding: 80px; }
+  padding: 80px;
+}
